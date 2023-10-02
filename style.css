@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  background-color: lavenderblush;
+  padding: 0;
+}
+
+.container{
+    display: block;
+}
+
+
+.fish{
+    background-color:tomato;
+    position: absolute;
+    z-index: 2;
+    animation: bouncefish 3s ease-in-out infinite alternate;
+
+}
+
+#fishbody{
+    top: 280px;
+    left: 240px;
+    width: 110px;
+    height: 70px;
+    border-radius: 180px 180px 100px 100px;
+}
+
+#fishtail{
+    top: 280px;
+    left: 210px;
+    width: 40px;
+    height: 70px;
+    border-radius: 10px 100px 100px 10px;
+    rotate: -5deg;
+
+}
+
+#fisheye{
+    left: 320px;
+    top: 320px;
+    z-index: 3;
+    background-color:darkslateblue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+}
+
+#fishfin{
+    top: 260px;
+    left: 290px;
+    width: 20px;
+    height: 110px;
+    border-radius: 10px 100px 100px 10px;
+    rotate: 10deg;
+
+}
+
+#fishlip1{
+    left: 345px;
+    top: 327px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+}
+#fishlip2{
+    left: 343px;
+    top: 332px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+}
+
+#bubble1{
+    left: 360px;
+    top: 280px;
+    background-color:lavenderblush;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    animation: bouncebubble1 4s ease-in-out infinite alternate;
+
+}
+#bubble2{
+    left: 340px;
+    top: 230px;
+    background-color:lavenderblush;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: bouncebubble2 2s ease-in-out infinite alternate;
+}
+
+@keyframes bouncefish{
+    0%{margin-top: 0px;}
+    100%{margin-top: 35px;}
+}
+
+@keyframes bouncebubble1{
+    0%{margin-top: 0px;}
+    100%{margin-top: 25px;}
+}
+
+@keyframes bouncebubble2{
+    0%{margin-top: 0px;}
+    100%{margin-top: 20px;}
+    }
